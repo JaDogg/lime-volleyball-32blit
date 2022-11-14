@@ -1,10 +1,10 @@
-title: game title
-description: game description
-author: you
+title: lime-volleyball
+description: Port of Lime Volleyball to 32blit
+author: Originally by Bruno Garcia, Port by Bhathiya Perera
 splash:
   file: assets/no-image.png
 icon:
   file: assets/no-icon.png
 version: v0.0.1
 category: game # game, demo, utility, ...
-url: https://github.com/32blit/32blit-boilerplate
+url: https://github.com/JaDogg/lime-volleyball-32blit
