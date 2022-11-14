@@ -68,7 +68,7 @@ void wasm4_text(const char *text, int32_t x, int32_t y) {
 
 void wasm4_tone(uint32_t frequency, uint32_t duration, uint32_t volume,
                 uint32_t flags) {
-  // TODO
+  wasm4_tone_callback(frequency, duration, volume, flags);
 }
 
 uint32_t wasm4_diskr(void *dest, uint32_t size) { return 0; }

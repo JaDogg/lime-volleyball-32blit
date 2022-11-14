@@ -1,13 +1,16 @@
 # Lime Volleyball Port to 32blit
 
 ## What is this?
+
 * Port of lime volleyball for wasm4 for 32blit/picosystem
 * Originally by Bruno Garcia, Port by Bhathiya Perera
 * Original repository https://github.com/aduros/lime-volleyball
 * No audio support yet
-* Works on pico-system but colours look awful 
+* Works on pico-system but colours look awful
+* NOTE: The game plays faster than the original
 
 # License
+
 * Note: Original License unknown for the game.
 * This use parts of native runtime for wasm4 (framebuffer.c/framebuffer.h,util.c,util.h,wasm4.h)
 
