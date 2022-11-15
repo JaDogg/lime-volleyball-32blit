@@ -17,6 +17,12 @@ uint8_t W4FAKE_FRAME_BUFFER[160 * 160 >> 2] = {};
 #include "framebuffer.h"
 #include "util.h"
 
+void wasm4_before_update() {
+  if (!(W4FAKE_SYSTEM_FLAGS & SYSTEM_PRESERVE_FRAMEBUFFER)) {
+    w4_framebufferClear();
+  }
+}
+
 void init_wasm4() {
   w4_write32LE(&W4FAKE_PALETTE[0], 0xe0f8cf);
   w4_write32LE(&W4FAKE_PALETTE[1], 0x86c06c);

@@ -6,8 +6,8 @@ project(limevolleyball)
 
 # Add your sources here (adding headers is optional, but helps some CMake generators)
 set(PROJECT_SOURCE
-        # Simple game that calls update() init() of wasm game
-        game.cpp game.hpp
+        # Simple wrapper that calls update() init() of wasm game
+        game.cpp
         # WASM4 semi emulation
         src/fake_wasm4_core.h
         src/framebuffer.c
@@ -15,6 +15,9 @@ set(PROJECT_SOURCE
         src/util.h
         src/util.c
         src/fake_wasm4.cpp
+        src/apu.cpp
+        src/apu.hpp
+        src/gpu.cpp
         src/wasm4.h # Use this file instead of original wasm4.h
         # Actual WASM4 game source goes here
         src/images.h

@@ -14,10 +14,15 @@ void wasm4_export_start();
  * Exported update method
  */
 void wasm4_export_update();
+/**
+ * Call this before export update is called
+ */
+void wasm4_before_update();
 // Call this to invoke draw callback
 void wasm4_draw();
 // To be implemented by game engine
 void wasm4_draw_callback(const uint32_t *palette, const uint8_t *framebuffer);
+// To be implemented by game engine
 void wasm4_tone_callback(uint32_t frequency, uint32_t duration, uint32_t volume,
                          uint32_t flags);
 
