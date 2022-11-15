@@ -9,7 +9,6 @@ extern "C" {
 uint32_t prev_time_ms = 0;
 bool first_time = true;
 double fps = 0.0;
-std::stringstream temp_sstream;
 
 void init() {
   blit::set_screen_mode(blit::ScreenMode::hires);
@@ -24,12 +23,6 @@ void render(uint32_t time) {
   blit::screen.pen = blit::Pen(0, 0, 0);
   blit::screen.clear();
   wasm4_draw();
-  blit::screen.pen = blit::Pen(255, 255, 255);
-  temp_sstream.str("");
-  temp_sstream.clear();
-  temp_sstream << "FPS:  " << fps;
-  blit::screen.text(temp_sstream.str(), blit::minimal_font,
-                    blit::Point(5, 165));
 }
 
 void capture_input() {
