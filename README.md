@@ -5,7 +5,6 @@
 * Port of lime volleyball for wasm4 for 32blit/picosystem
 * Originally by Bruno Garcia, Port by Bhathiya Perera
 * Original repository https://github.com/aduros/lime-volleyball
-* No audio support yet
 * Works on pico-system but colours look awful
 * NOTE: The game plays faster than the original
 
